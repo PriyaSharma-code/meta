@@ -1,0 +1,20 @@
+spec_version: 1
+name: ai-sprint-manager
+type: environment
+runtime: python
+app: server:app
+port: 8000
+description: >
+  An RL environment where an AI agent acts as a Tech Lead managing
+  agile sprints — assigning tasks to developers, balancing workload,
+  and handling unexpected events to maximize team productivity.
+tasks:
+  - id: easy_sprint
+    name: "Easy Sprint: Small Team, Clear Tasks"
+    difficulty: easy
+  - id: medium_sprint
+    name: "Medium Sprint: Bugs + Delays"
+    difficulty: medium
+  - id: hard_sprint
+    name: "Hard Sprint: Cascading Failures & Scope Changes"
+    difficulty: hard
